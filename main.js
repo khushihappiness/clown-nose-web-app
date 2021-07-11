@@ -18,6 +18,12 @@ function modelLoaded()
     console.log(" The poseNet model is loaded")
 }
 
+
+function draw()
+{
+image(video,0,0, 400,400)
+}
+
 function gotPoses(results)
 {
 if(results.length>0)
@@ -30,10 +36,6 @@ if(results.length>0)
 }
 }
 
-function draw()
-{
-image(video,0,0, 400,400)
-}
 
 function take_snapshot()
 {
